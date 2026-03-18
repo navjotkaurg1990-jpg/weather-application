@@ -23,10 +23,10 @@ body, html {
     height: 200vh;
     background: linear-gradient(
         45deg,
-        #1e1b4b, 
-        #312e81, 
-        #064e3b, 
-        #0f172a  
+        #0f172a, 
+        #1e3a8a, 
+        #0284c7, 
+        #172554  
     );
     background-size: 400% 400%;
     animation: gradientFlow 15s ease infinite;
@@ -65,7 +65,7 @@ header h1 {
     font-size: 2.2rem;
     font-weight: 800;
     margin-bottom: 8px;
-    background: linear-gradient(135deg, #a78bfa, #38bdf8);
+    background: linear-gradient(135deg, #7dd3fc, #0284c7);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     text-align: center;
