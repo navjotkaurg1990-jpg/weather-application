@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atmosphere | Weather App</title>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="background-animation"></div>
+    <div class="glass-container">
+        <header>
+            <h1>Atmosphere</h1>
+            <p>Select a country and city to discover current conditions.</p>
+        </header>
+
+        <main>
+            <div class="controls">
+                <div class="select-wrapper">
+                    <select id="country-select">
+                        <option value="" disabled selected>Loading Countries...</option>
+                    </select>
+                </div>
+                <div class="select-wrapper" id="city-wrapper" style="opacity: 0.5;">
+                    <select id="city-select" disabled>
+                        <option value="" disabled selected>Select City</option>
+                    </select>
+                </div>
+            </div>
+
+            <div id="loader" class="loader hidden"></div>
+            <div id="error-message" class="error hidden">Something went wrong.</div>
+
+            <div id="weather-card" class="weather-card hidden">
+                <div class="weather-header">
+                    <h2 id="location-name">City Name</h2>
+                    <p id="weather-desc">Sunny</p>
+                </div>
+                <div class="weather-main">
+                    <div class="temp">
+                        <span id="temperature">--</span>°
+                    </div>
+                </div>
+                <div class="weather-details">
+                    <div class="detail">
+                        <span class="label">Wind</span>
+                        <span class="value" id="wind-speed">-- km/h</span>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
