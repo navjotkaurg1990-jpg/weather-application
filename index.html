@@ -16,6 +16,10 @@
         </header>
 
         <main>
+            <div class="controls-top">
+                <button id="locate-btn" class="action-btn">📍 Auto Locate</button>
+            </div>
+            
             <div class="controls">
                 <div class="select-wrapper">
                     <select id="country-select">
@@ -47,6 +51,18 @@
                         <span class="label">Wind</span>
                         <span class="value" id="wind-speed">-- km/h</span>
                     </div>
+                    <div class="detail">
+                        <span class="label">Humidity</span>
+                        <span class="value" id="humidity">--%</span>
+                    </div>
+                    <div class="detail">
+                        <span class="label">Feels Like</span>
+                        <span class="value" id="feels-like">--°</span>
+                    </div>
+                </div>
+
+                <div class="forecast-section" id="forecast-section">
+                    <!-- Forecast items injected via JS -->
                 </div>
             </div>
         </main>
